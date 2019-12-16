@@ -69,7 +69,6 @@ body {
   margin: 0;
   font-size: 14px;
   padding: 0;
-  outline: 0 !important;
 }
 
 img {
@@ -120,6 +119,7 @@ img {
   text-decoration: none;
   font-family: 'Dancing Script', cursive;
   font-size: 22px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .top-nav-menu li a:hover {
@@ -311,6 +311,7 @@ img {
   text-decoration: none;
   color: #000;
   font-size: 23px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .lunch {
