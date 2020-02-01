@@ -74,21 +74,22 @@ var Field = class Field{
     var canvasWidth = window.innerWidth;
     var maxY = canvasHeight - field.ball.height;
     var maxX = canvasWidth - field.ball.width;
+    
+    var moveMaxY = (maxY * y / 180 - 20);
+    var moveMaxX = (maxX * x / 180 - 20);
+    
+    if(moveMaxY < 0) field.ball.y = 0;
+    if(moveMaxY > 0) field.ball.y = moveMaxY;
+    if(moveMaxY > maxY) field.ball.y = maxY;
+    if(moveMaxY < maxY) field.ball.y = moveMaxY;
 
-    if((maxY * y / 180 - 20) < field.ball.y && (maxY * y / 180 - 20) > 0 ){
-      field.ball.y = (maxY * y / 180 - 20);
-    }else
-    {
-      field.ball.y = maxY
-    }
+    if(moveMaxX < 0) field.ball.x = 0;
+    if(moveMaxX > 0) field.ball.x = moveMaxX;
+    if(moveMaxX > maxX) field.ball.x = maxX;
+    if(moveMaxX < maxX) field.ball.x = moveMaxX;
 
-    if((maxX * x / 180 - 20) < field.ball.x && (maxX * x / 180 - 20) > 0 ){
-      field.ball.x = (maxX * x / 180 - 20);
-    }else
-    {
-      field.ball.x = maxX
-    }
-
+    
+ 
     field.ball.initializeBall();
     field.finish.initializeFinish();
     field.holesList.forEach(function(props){
@@ -119,7 +120,7 @@ class Ball{
     ballImage.src = "./img/ball.png";
     this.ctx.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
     ballImage.addEventListener('load', () =>{
-    this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
+    this.ctx.drawImage(ballImage,this.y, this.x, this.width, this.height);
     });
   }
 }
