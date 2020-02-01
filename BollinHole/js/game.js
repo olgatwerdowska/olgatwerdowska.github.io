@@ -88,6 +88,8 @@ class Ball{
   x;
   y;
   ctx;
+  canvasHeight = window.innerHeight;
+  canvasWidth = window.innerWidth;
   constructor(mCanvas){
     this.width = 40
     this.height = 40
@@ -98,7 +100,7 @@ class Ball{
   initializeBall(){
     const ballImage = new Image();
     ballImage.src = "./img/ball.png";
-    this.ctx.clearRect(this.x, this.y , 40, 40);
+    this.ctx.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
