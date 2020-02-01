@@ -7,7 +7,6 @@ var Field = class Field{
     this.height = window.innerHeight;
     this.initializeCanvas(field);
     this.ball = new Ball(this.ctx);
-    this.ball.initializeBall();
     this.finish = new Finish(this.ctx);
     this.finish.initializeFinish();
     this.holeGenerator();
@@ -77,6 +76,8 @@ var Field = class Field{
 
     field.ball.y = (canvasHeight * y / 180 - 20);
     field.ball.x = (canvasWidth * x / 180 - 20);
+
+    field.ball.initializeBall();
   }
 }
 
@@ -99,7 +100,6 @@ class Ball{
     ballImage.src = "./img/ball.png";
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
-    this.ctx.stroke();
     });
   }
 }
