@@ -72,8 +72,8 @@ var Field = class Field{
     y += 90;
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
-    var maxY = canvasHeight - field.ball.height;
-    var maxX = canvasWidth - field.ball.width;
+    var maxY = canvasWidth - field.ball.height;
+    var maxX = canvasHeight - field.ball.width;
     
     var moveMaxY = (maxY * y / 180 - 20);
     var moveMaxX = (maxX * x / 180 - 20);
@@ -119,7 +119,7 @@ class Ball{
     ballImage.src = "./img/ball.png";
     this.ctx.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
     ballImage.addEventListener('load', () =>{
-    this.ctx.drawImage(ballImage,this.y, this.x, this.width, this.height);
+    this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
   }
 }
