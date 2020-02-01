@@ -77,6 +77,7 @@ var Field = class Field{
     field.ball.y = (canvasHeight * y / 180 - 20);
     field.ball.x = (canvasWidth * x / 180 - 20);
 
+    field.ctx.clearRect(field.ball.x, field.ball.y, field.ball.width, field.ball.height);
     field.ball.initializeBall();
   }
 }
