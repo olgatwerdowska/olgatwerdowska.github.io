@@ -77,7 +77,6 @@ var Field = class Field{
     field.ball.y = (canvasHeight * y / 180 - 20);
     field.ball.x = (canvasWidth * x / 180 - 20);
 
-    field.ctx.clearRect(field.ball.x - 5, field.ball.y - 5 , 50, 50);
     field.ball.initializeBall();
   }
 }
@@ -99,6 +98,7 @@ class Ball{
   initializeBall(){
     const ballImage = new Image();
     ballImage.src = "./img/ball.png";
+    this.ctx.clearRect(x, y , 50, 50);
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
