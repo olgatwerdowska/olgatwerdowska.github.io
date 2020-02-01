@@ -99,6 +99,7 @@ class Ball{
     ballImage.src = "./img/ball.png";
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
+    this.ctx.stroke();
     });
   }
 }
