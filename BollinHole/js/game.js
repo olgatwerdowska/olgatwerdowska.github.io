@@ -8,8 +8,8 @@ var Field = class Field{
     this.initializeCanvas(field);
     this.ball = new Ball(this.ctx);
     this.finish = new Finish(this.ctx);
-    this.finish.initializeFinish();
-    this.holeGenerator();
+    // this.finish.initializeFinish();
+    // this.holeGenerator();
   }
   
   initializeCanvas(field){
@@ -78,6 +78,8 @@ var Field = class Field{
     field.ball.x = (canvasWidth * x / 180 - 20);
 
     field.ball.initializeBall();
+    field.finish.initializeFinish();
+    field.holeGenerator();
   }
 }
 
