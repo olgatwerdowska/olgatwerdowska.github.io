@@ -70,7 +70,7 @@ var Field = class Field{
     if (x < -90) { x = -90};
 
     x += 5;
-    y += 10;
+    y += 5;
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
 
