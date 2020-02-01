@@ -119,7 +119,7 @@ class Ball{
     ballImage.src = "./img/ball.png";
     this.ctx.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
     ballImage.addEventListener('load', () =>{
-    this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
+    this.ctx.drawImage(ballImage,this.y, this.x, this.width, this.height);
     });
   }
 }
