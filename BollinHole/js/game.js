@@ -1,17 +1,16 @@
 
 var Field = class Field{
   holesList = new Array();
-  ball;
+  ctx;
   constructor(field){
     this.width = window.innerWidth;
     this.height = window.innerHeight;
     this.initializeCanvas(field);
-    this.ball = new Ball(this.ctx);
-    this.ball.initializeBall();
+    // this.ball = new Ball(this.ctx);
+    // this.ball.initializeBall();
     this.finish = new Finish(this.ctx);
     this.finish.initializeFinish();
     this.holeGenerator();
-    this.BallMove();
   }
   
   initializeCanvas(field){
@@ -65,20 +64,23 @@ var Field = class Field{
   }
 
   BallMove(event){
-  var x = event.beta;
-  var y = event.gama;
+    const ball = new Ball(field.ctx);
+    var x = event.beta;
+    var y = event.gamma;
 
-  if (x >  90) { x =  90};
-  if (x < -90) { x = -90};
+    if (x >  90) { x =  90};
+    if (x < -90) { x = -90};
 
-  x += 90;
-  y += 90;
-  var canvasHeight = window.innerHeight;
-  var canvasWidth = window.innerWidth;
+    x += 5;
+    y += 10;
+    var canvasHeight = window.innerHeight;
+    var canvasWidth = window.innerWidth;
 
-  this.ball.y = (canvasHeight * y / 180 - 20);
-  this.ball.x = (canvasWidth * x / 180 - 20);
- }
+    ball.y = (canvasHeight * y / 180 - 20);
+    ball.x = (canvasWidth * x / 180 - 20);
+
+    ball.initializeBall();
+  }
 }
 
 
@@ -87,7 +89,7 @@ class Ball{
   height;
   x;
   y;
-  ctx
+  ctx;
   constructor(mCanvas){
     this.width = 40
     this.height = 40
@@ -97,7 +99,7 @@ class Ball{
   }
   initializeBall(){
     const ballImage = new Image();
-    ballImage.src = './img/ball.png';
+    ballImage.src = "./img/ball.png";
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
@@ -145,6 +147,8 @@ class Finish{
     this.ctx.fillRect((this.canvasWidth - this.width), (this.canvasHeight - this.height), this.width, this.height);
   }
 }
+
+
 
 
 
