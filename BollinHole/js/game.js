@@ -75,20 +75,20 @@ var Field = class Field{
     var maxY = canvasHeight - field.ball.height;
     var maxX = canvasWidth - field.ball.width;
 
-    if((maxY * y / 180 - 20) < maxY && (maxY * y / 180 - 20) > 0 ){
+    if((maxY * y / 180 - 20) < field.ball.y && (maxY * y / 180 - 20) > 0 ){
       field.ball.y = (maxY * y / 180 - 20);
     }else
     {
       field.ball.y = maxY
     }
 
-    if((maxX * x / 180 - 20) < maxX && (maxX * x / 180 - 20) > 0 ){
+    if((maxX * x / 180 - 20) < field.ball.x && (maxX * x / 180 - 20) > 0 ){
       field.ball.x = (maxX * x / 180 - 20);
     }else
     {
       field.ball.x = maxX
     }
-    
+
     field.ball.initializeBall();
     field.finish.initializeFinish();
     field.holesList.forEach(function(props){
