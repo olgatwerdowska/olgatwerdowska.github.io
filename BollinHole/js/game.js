@@ -149,7 +149,6 @@ class Finish{
 
 window.addEventListener('deviceorientation', handleOrientation);
 function handleOrientation() {
-
   var x = event.beta
   console.log(x);
 }
