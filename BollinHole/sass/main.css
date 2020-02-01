@@ -1,90 +1,10 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-}
-#field{
-    position: static;
-    height: 100vh;
-    width: 100%;
-    background-color: green;
-    margin: 0px;
-
+.canvasHolder {
+  height: 100vh;
+  width: 100%;
 }
 
-#ball{
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    z-index: 15;
-    border: 1px solid black;
-    background: radial-gradient(circle at 30px 30px, orange, red);
+body {
+  padding: 0;
+  margin: 0;
 }
-
-#hole{
-    position: absolute;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    background-color: black;
-    right: 50px;
-    bottom: 50px;
-    overflow: hidden;
-}
-
-
-
-  .hole{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.92);
-    box-shadow: 0 0 20px black;
-    border-radius: 100%;
-    width : 52px;
-    height: 52px;
-  }
-
-  #hole1 {
-    top   : 140px;
-    left  : 420px;
-  }
-
-  #hole2 {
-    top   : 300px;
-    left  : 500px;
-  }
-
-  #hole3 {
-    top   : 370px;
-    left  : 100px;
-  }
-  #hole4 {
-    top   : 80px;
-    left  : 450px;
-  }
-
-  #hole5 {
-    top   : 480px;
-    left  : 250px;
-  }
-
-
-  .message {
-    position: absolute;
-    padding: 20px;
-    visibility: hidden;
-    background: rgba(237, 243, 238, 0.506);
-  }
-
-  #finish{
-    top   : 120px;
-    left  : 500px;
-    background: white;
-    position: absolute;
-    box-shadow: 0 0 20px black;
-    border-radius: 100%;
-    width : 52px;
-    height: 52px;
-  }
+/*# sourceMappingURL=main.css.map */
