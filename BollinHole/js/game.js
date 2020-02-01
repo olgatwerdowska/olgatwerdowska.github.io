@@ -8,7 +8,6 @@ var Field = class Field{
     this.initializeCanvas(field);
     this.ball = new Ball(this.ctx);
     this.finish = new Finish(this.ctx);
-    // this.finish.initializeFinish();
     this.holeGenerator();
   }
   
@@ -73,9 +72,10 @@ var Field = class Field{
     y += 5;
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
-
-    field.ball.y = (canvasHeight * y / 180 - 20);
-    field.ball.x = (canvasWidth * x / 180 - 20);
+    var maxY = canvasHeight - field.ball.height;
+    var maxX = canvasWidth - field.ball.width;
+    field.ball.y = (maxY * y / 180 - 20);
+    field.ball.x = (maxX * x / 180 - 20);
 
     field.ball.initializeBall();
     field.finish.initializeFinish();
