@@ -68,8 +68,8 @@ var Field = class Field{
     if (x >  90) { x =  90};
     if (x < -90) { x = -90};
 
-    x += 5;
-    y += 5;
+    x += 90;
+    y += 90;
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
     var maxY = canvasHeight - field.ball.height;
