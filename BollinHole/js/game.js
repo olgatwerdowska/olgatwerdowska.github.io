@@ -65,21 +65,19 @@ var Field = class Field{
   }
 
   BallMove(event){
-     var x = event.beta;
-    console.log (x ,event);
+  var x = event.beta;
+  var y = event.gama;
 
-  // var y = event.gama;
+  if (x >  90) { x =  90};
+  if (x < -90) { x = -90};
 
-  // if (x >  90) { x =  90};
-  // if (x < -90) { x = -90};
+  x += 90;
+  y += 90;
+  var canvasHeight = window.innerHeight;
+  var canvasWidth = window.innerWidth;
 
-  // x += 90;
-  // y += 90;
-  // var canvasHeight = window.innerHeight;
-  // var canvasWidth = window.innerWidth;
-
-  // this.ball.y = (canvasHeight * y / 180 - 20);
-  // this.ball.x = (canvasWidth * x / 180 - 20);
+  this.ball.y = (canvasHeight * y / 180 - 20);
+  this.ball.x = (canvasWidth * x / 180 - 20);
  }
 }
 
