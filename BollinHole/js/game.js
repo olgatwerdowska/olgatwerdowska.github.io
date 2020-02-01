@@ -98,7 +98,7 @@ class Ball{
   initializeBall(){
     const ballImage = new Image();
     ballImage.src = "./img/ball.png";
-    this.ctx.clearRect(x, y , 50, 50);
+    this.ctx.clearRect(this.x, this.y , 40, 40);
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
