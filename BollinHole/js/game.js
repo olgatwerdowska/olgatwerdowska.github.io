@@ -11,7 +11,7 @@ var Field = class Field{
     this.finish = new Finish(this.ctx);
     this.finish.initializeFinish();
     this.holeGenerator();
-    // this.ball.BallMove();
+    this.BallMove();
   }
   
   initializeCanvas(field){
@@ -64,6 +64,23 @@ var Field = class Field{
     }
   }
 
+  BallMove(event){
+     var x = event.beta;
+    console.log (x ,event);
+
+  // var y = event.gama;
+
+  // if (x >  90) { x =  90};
+  // if (x < -90) { x = -90};
+
+  // x += 90;
+  // y += 90;
+  // var canvasHeight = window.innerHeight;
+  // var canvasWidth = window.innerWidth;
+
+  // this.ball.y = (canvasHeight * y / 180 - 20);
+  // this.ball.x = (canvasWidth * x / 180 - 20);
+ }
 }
 
 
@@ -131,27 +148,13 @@ class Finish{
   }
 }
 
-// BallMove(event){
-//   var x = event.beta;
-//   var y = event.gama;
 
-//   if (x >  90) { x =  90};
-//   if (x < -90) { x = -90};
 
-//   x += 90;
-//   y += 90;
-//   var canvasHeight = window.innerHeight;
-//   var canvasWidth = window.innerWidth;
 
-//   this.ball.y = (canvasHeight * y / 180 - 20);
-//   this.ball.x = (canvasWidth * x / 180 - 20);
-// }
 
-window.addEventListener('deviceorientation', handleOrientation);
-function handleOrientation() {
-  var x = event.beta
-  console.log(x);
-}
+
+
+
 
 
 
