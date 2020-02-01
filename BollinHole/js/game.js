@@ -6,8 +6,8 @@ var Field = class Field{
     this.width = window.innerWidth;
     this.height = window.innerHeight;
     this.initializeCanvas(field);
-    // this.ball = new Ball(this.ctx);
-    // this.ball.initializeBall();
+    this.ball = new Ball(this.ctx);
+    this.ball.initializeBall();
     this.finish = new Finish(this.ctx);
     this.finish.initializeFinish();
     this.holeGenerator();
@@ -64,7 +64,6 @@ var Field = class Field{
   }
 
   BallMove(event){
-    const ball = new Ball(field.ctx);
     var x = event.beta;
     var y = event.gamma;
 
@@ -76,10 +75,8 @@ var Field = class Field{
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
 
-    ball.y = (canvasHeight * y / 180 - 20);
-    ball.x = (canvasWidth * x / 180 - 20);
-
-    ball.initializeBall();
+    field.ball.y = (canvasHeight * y / 180 - 20);
+    field.ball.x = (canvasWidth * x / 180 - 20);
   }
 }
 
