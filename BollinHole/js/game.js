@@ -9,7 +9,7 @@ var Field = class Field{
     this.ball = new Ball(this.ctx);
     this.finish = new Finish(this.ctx);
     // this.finish.initializeFinish();
-    // this.holeGenerator();
+    this.holeGenerator();
   }
   
   initializeCanvas(field){
@@ -35,7 +35,7 @@ var Field = class Field{
      if (this.placeForHoleIsEmpty(hole))
      {
       this.holesList.push(hole);
-      hole.initializeHole();
+      //hole.initializeHole();
      }
      
     }
@@ -79,7 +79,10 @@ var Field = class Field{
 
     field.ball.initializeBall();
     field.finish.initializeFinish();
-    field.holeGenerator();
+    field.holesList.forEach(function(props){
+      const hole = props;
+      props.initializeHole();
+    })
   }
 }
 
