@@ -82,7 +82,6 @@ var Field = class Field{
     if(moveMaxY > 0) field.ball.y = moveMaxY;
     if(moveMaxY > maxY) field.ball.y = maxY;
     if(moveMaxY < maxY) field.ball.y = moveMaxY;
-
     if(moveMaxX < 0) field.ball.x = 0;
     if(moveMaxX > 0) field.ball.x = moveMaxX;
     if(moveMaxX > maxX) field.ball.x = maxX;
@@ -120,7 +119,7 @@ class Ball{
     ballImage.src = "./img/ball.png";
     this.ctx.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
     ballImage.addEventListener('load', () =>{
-    this.ctx.drawImage(ballImage,this.y, this.x, this.width, this.height);
+    this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
   }
 }
