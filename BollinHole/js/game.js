@@ -62,8 +62,8 @@ var Field = class Field{
   }
 
   BallMove(event){
-    var x = event.beta;
-    var y = event.gamma;
+    var x = event.gamma;
+    var y = event.beta;
 
     if (x >  90) { x =  90};
     if (x < -90) { x = -90};
