@@ -12,7 +12,7 @@ class Field{
     this.finish = new Finish(this.ctx);
     this.finish.initializeFinish();
     this.holeGenerator();
-    this.ball.BallMove();
+    // this.ball.BallMove();
   }
   
   initializeCanvas(field){
@@ -82,28 +82,28 @@ class Ball{
   }
   initializeBall(){
     const ballImage = new Image();
-    ballImage.src = 'C:/Users/User/Desktop/BollinHole/img/icons8-billiard-ball-64.png';
+    ballImage.src = './img/ball.png';
     ballImage.addEventListener('load', () =>{
     this.ctx.drawImage(ballImage,this.x, this.y, this.width, this.height);
     });
   }
-  BallMove(){
-    window.addEventListener('devicemotion', function(event) {
-      var x = event.beta;
-      var y = event.gama;
+  // BallMove(){
+  //   window.addEventListener('devicemotion', function(event) {
+  //     var x = event.beta;
+  //     var y = event.gama;
   
-      if (x >  90) { x =  90};
-      if (x < -90) { x = -90};
+  //     if (x >  90) { x =  90};
+  //     if (x < -90) { x = -90};
   
-      x += 90;
-      y += 90;
-      var canvasHeight = window.innerHeight;
-      var canvasWidth = window.innerWidth;
+  //     x += 90;
+  //     y += 90;
+  //     var canvasHeight = window.innerHeight;
+  //     var canvasWidth = window.innerWidth;
   
-      this.ball.y = (canvasHeight * y / 180 - 20);
-      this.ball.x = (canvasWidth * x / 180 - 20);
-    });
-  }
+  //     this.ball.y = (canvasHeight * y / 180 - 20);
+  //     this.ball.x = (canvasWidth * x / 180 - 20);
+  //   });
+  // }
 }
 
 class Hole{
