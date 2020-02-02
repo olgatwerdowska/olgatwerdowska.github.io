@@ -86,6 +86,8 @@ var Field = class Field{
     // if(moveMaxX > 0) field.ball.x = moveMaxX;
     // if(moveMaxX > maxX) field.ball.x = maxX;
     // if(moveMaxX < maxX) field.ball.x = moveMaxX;
+    field.ball.x = moveMaxX; 
+    field.ball.y = moveMaxY;
 
     
  
