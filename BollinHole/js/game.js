@@ -96,6 +96,7 @@ var Field = class Field{
     })
 
     field.checkBallinHole();
+    field.checkBallinFinish()
   }
 
 
@@ -107,14 +108,12 @@ var Field = class Field{
         && field.ball.x > hole.posotionX - 20
         && field.ball.x < hole.posotionX + 20
         ){
-          console.log("false");
           const statement = document.getElementById('statement');
           const canvas = document.getElementById('field');
           statement.style.display = "block";
           canvas.style.display = "none";   
           return false       
       }
-      console.log("true", hole.posotionY, field.ball.y);
       return true;
     })
   }
@@ -123,7 +122,7 @@ var Field = class Field{
     if( field.ball.y + field.ball.height > field.finish.y
       && field.ball.x + field.ball.width > field.finish.x){
         console.log("super");
-      }
+    }
   }
 
 }
