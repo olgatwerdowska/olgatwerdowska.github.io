@@ -199,8 +199,8 @@ class Hole{
 
   width = 40;
   height = 40;
-  canvasHeight = window.innerHeight;
-  canvasWidth = window.innerWidth;
+  canvasHeight = window.innerHeight ;
+  canvasWidth = window.innerWidth  ;
   maxRandomX = this.canvasWidth - (100);
   maxRandomY = this.canvasHeight - (100);
   minRandomX  = this.width + 50;
@@ -224,11 +224,11 @@ class Hole{
 
 class Finish{
   constructor(mCanvas){
-    this.width = 70;
-    this.height = 70;
+    this.width = 50;
+    this.height = 50;
     this.ctx = mCanvas;
-    this.canvasHeight = window.innerHeight;
-    this.canvasWidth = window.innerWidth;
+    this.canvasHeight = window.innerHeight - 50;
+    this.canvasWidth = window.innerWidth - 50;
     this.y = this.canvasHeight - this.height;
     this.x = this.canvasWidth - this.width;
   }

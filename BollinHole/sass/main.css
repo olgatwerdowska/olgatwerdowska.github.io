@@ -20,6 +20,7 @@ body {
   border: 3px solid yellowgreen;
   border-radius: 10px;
   padding: 20px;
+  background-color: white;
 }
 
 .win{
@@ -27,6 +28,7 @@ body {
   border: 3px solid yellowgreen;
   border-radius: 10px;
   padding: 20px;
+  background-color: white;
 }
 
 .icon{
