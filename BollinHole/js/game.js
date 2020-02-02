@@ -101,15 +101,16 @@ var Field = class Field{
   checkBallinHole(){
     field.holesList.forEach(function(hole){
       if(
-        hole.y + 45 > field.ball.y + 25
-        && hole.y - 45 < field.ball.y + 25
-        && hole.x + 45 > field.ball.x + 25
-        && hole.x - 45  < field.ball.x + 25){
-          console.log("true");
-          return true
+        field.ball.y > hole.posotionY - 20
+        && field.ball.y < hole.posotionY + 20
+        && field.ball.x > hole.posotionX - 20
+        && field.ball.x < hole.posotionX + 20
+        ){
+          console.log("false");
+          return false
       }
-      console.log("false");
-      return false;
+      console.log("true", hole.posotionY, field.ball.y);
+      return true;
     })
   }
 
