@@ -1,11 +1,59 @@
 .canvasHolder {
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 canvas{
-  border: 3px solid plum;
+  border: 3px solid green;
 }
 body {
   padding: 0;
   margin: 0;
+}
+.gameover{
+  display: none;
+  border: 3px solid green;
+  border-radius: 10px;
+  padding: 20px;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+}
+.again{
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 5px 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  font-family: 'Sigmar One', cursive;
+}
+.box{
+  display: block;
+}
+
+.gameovertitle{
+  color: #35495e;
+  font-family: 'Muli', sans-serif;
+  margin: 5px 0;
+}
+
+span{
+  color: #35495e;
+  font-family: 'Muli', sans-serif;
+}
+
+.count{
+  margin: 5px 0;
+  text-align: center;
+}
+
+.time{
+  margin: 5px 0;
+  text-align: center;
 }
