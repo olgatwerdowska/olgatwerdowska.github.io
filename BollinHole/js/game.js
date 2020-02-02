@@ -155,8 +155,8 @@ class Hole{
 
 class Finish{
   constructor(mCanvas){
-    this.width = 50;
-    this.height = 50;
+    this.width = 70;
+    this.height = 70;
     this.ctx = mCanvas;
     this.canvasHeight = window.innerHeight;
     this.canvasWidth = window.innerWidth;
