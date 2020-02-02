@@ -114,9 +114,10 @@ var Field = class Field{
           var curentCount = localStorage.getItem('count');
           var countHTML = document.getElementById('count');
           countHTML.innerText = "Count: " + curentCount;
-
+          window.removeEventListener('deviceorientation', field.BallMove, true);
           statement.style.display = "block";
-          return false       
+
+          return false  
       }
       return true;
     })
@@ -127,6 +128,7 @@ var Field = class Field{
       && field.ball.x + field.ball.width > field.finish.x){
         const win = document.getElementById('win');
         const canvas = document.getElementById('field');
+        window.removeEventListener('deviceorientation', field.BallMove, true);
         win.style.display = "block";
         canvas.style.display = "none";
     }
