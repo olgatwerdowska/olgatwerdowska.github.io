@@ -131,7 +131,7 @@ var Field = class Field{
   countAndTimeWin(){
     var curentCount = localStorage.getItem('count');
     localStorage.setItem('count', curentCount + 1);
-    document.getElementById('count').innerHTML = curentCount;
+    console.log(curentCount);
     location.reload();
   }
 
@@ -139,6 +139,7 @@ var Field = class Field{
     var curentCount = localStorage.getItem('count');
     localStorage.setItem('count', 0);
     document.getElementById('count').innerHTML = curentCount;
+    console.log(curentCount);
     location.reload();
   }
 }
