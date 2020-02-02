@@ -95,13 +95,7 @@ var Field = class Field{
       props.initializeHole();
     })
 
-    if(field.checkBallinHole()){
-    const statement = document.getElementById('statement');
-    const canvas = document.getElementById('field');
-
-    statement.style.display = "block";
-    canvas.style.display = "none";
-    }
+    field.checkBallinHole();
   }
 
 
@@ -114,7 +108,10 @@ var Field = class Field{
         && field.ball.x < hole.posotionX + 20
         ){
           console.log("false");
-          return false;
+          const statement = document.getElementById('statement');
+          const canvas = document.getElementById('field');
+          statement.style.display = "block";
+          canvas.style.display = "none";          
       }
       console.log("true", hole.posotionY, field.ball.y);
       return true;
