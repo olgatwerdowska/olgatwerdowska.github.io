@@ -120,8 +120,11 @@ var Field = class Field{
           var timeFinish = Date.now();
           var  timeDifference = (timeFinish - field.timeStart);
 
+          var timeDifferenceSec = new Date(timeDifference).getSeconds();
+          var timeDifferenceMin = new Date(timeDifference).getMinutes();
+
           var timeHTML = document.getElementById('timeLose');
-          timeHTML.innerText = "Time: " + (new Date(timeDifference).getSeconds())  + " s";
+          timeHTML.innerText = "Time: " + timeDifferenceMin + " min " + timeDifferenceSec + " sec" ;
 
           window.removeEventListener('deviceorientation', field.BallMove, true);
           statement.style.display = "block";
@@ -141,8 +144,11 @@ var Field = class Field{
         var timeFinish = Date.now();
         var  timeDifference = timeFinish - field.timeStart;
 
+        var timeDifferenceSec = new Date(timeDifference).getSeconds();
+        var timeDifferenceMin = new Date(timeDifference).getMinutes();
+
         var timeHTML = document.getElementById('timeWin');
-        timeHTML.innerText = "Time: " + (new Date(timeDifference).getSeconds())  + " s";
+        timeHTML.innerText = "Time: " + timeDifferenceMin + " min " + timeDifferenceSec + " sec" ;
 
         window.removeEventListener('deviceorientation', field.BallMove, true);
         win.style.display = "block";
