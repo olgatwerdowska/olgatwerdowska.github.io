@@ -95,7 +95,7 @@ var Field = class Field{
       props.initializeHole();
     })
 
-    if(!field.checkBallinHole()){
+    if(field.checkBallinHole()){
     const statement = document.getElementById('statement');
     const canvas = document.getElementById('field');
 
