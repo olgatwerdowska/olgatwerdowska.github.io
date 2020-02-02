@@ -34,7 +34,6 @@ var Field = class Field{
      if (this.placeForHoleIsEmpty(hole))
      {
       this.holesList.push(hole);
-      //hole.initializeHole();
      }
      
     }
@@ -121,7 +120,10 @@ var Field = class Field{
   checkBallinFinish(){
     if( field.ball.y + field.ball.height > field.finish.y
       && field.ball.x + field.ball.width > field.finish.x){
-        console.log("super");
+        const win = document.getElementById('win');
+        const canvas = document.getElementById('field');
+        win.style.display = "block";
+        canvas.style.display = "none";
     }
   }
 

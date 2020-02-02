@@ -6,7 +6,7 @@
   justify-content: center;
 }
 canvas{
-  border: 3px solid pink ;
+  border: 3px solid peru ;
 }
 body {
   padding: 0;
@@ -18,6 +18,14 @@ body {
   border-radius: 10px;
   padding: 20px;
 }
+
+.win{
+  display: none;
+  border: 3px solid yellowgreen;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 .icon{
   display: flex;
   justify-content: center;
