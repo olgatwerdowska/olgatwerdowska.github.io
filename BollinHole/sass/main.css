@@ -4,11 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid rgb(56, 9, 163) ;
+  border: 3px solid rgb(49, 196, 68) ;
+  background-color: rgb(43, 194, 43);
 }
 canvas{
-  height: 100vh ;
   border: 3px solid rgb(108, 101, 126) ;
+  background-color: white;
 }
 body {
   padding: 0;

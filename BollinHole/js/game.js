@@ -4,8 +4,8 @@ var Field = class Field{
   ctx;
   timeStart = Date.now();
   constructor(field){
-    this.width = window.innerWidth;
-    this.height = window.innerHeight;
+    this.width = window.innerWidth - 50;
+    this.height = window.innerHeight - 50;
     this.initializeCanvas(field);
     this.ball = new Ball(this.ctx);
     this.finish = new Finish(this.ctx);
@@ -80,7 +80,7 @@ var Field = class Field{
     var moveMaxY = (maxY * y / 180 - 20);
     var moveMaxX = (maxX * x / 180 - 20);
     
-    // if(moveMaxY < 0) field.ball.y = 0;
+    if(moveMaxY < 0) field.ball.y = 0 ;
     // if(moveMaxY > 0) field.ball.y = moveMaxY;
     // if(moveMaxY > maxY) field.ball.y = maxY;
     // if(moveMaxY < maxY) field.ball.y = moveMaxY;
