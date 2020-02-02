@@ -17,7 +17,6 @@ var Field = class Field{
       this.ctx = this.canvas.getContext('2d');
       this.canvas.width = this.width;
       this.canvas.height = this.height;
-      localStorage.setItem('count', 0);
     }else {
       throw new Error('You have to provide Canvas ID');
     }
