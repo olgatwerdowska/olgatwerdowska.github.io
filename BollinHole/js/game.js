@@ -72,16 +72,16 @@ var Field = class Field{
     y += 90;
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
-    var maxY = canvasWidth - field.ball.height;
-    var maxX = canvasHeight - field.ball.width;
+    var maxY = canvasHeight - field.ball.height;
+    var maxX = canvasWidth - field.ball.width;
     
     var moveMaxY = (maxY * y / 180 - 20);
     var moveMaxX = (maxX * x / 180 - 20);
     
-    if(moveMaxY < 0) field.ball.y = 0;
-    if(moveMaxY > 0) field.ball.y = moveMaxY;
-    if(moveMaxY > maxY) field.ball.y = maxY;
-    if(moveMaxY < maxY) field.ball.y = moveMaxY;
+    // if(moveMaxY < 0) field.ball.y = 0;
+    // if(moveMaxY > 0) field.ball.y = moveMaxY;
+    // if(moveMaxY > maxY) field.ball.y = maxY;
+    // if(moveMaxY < maxY) field.ball.y = moveMaxY;
     // if(moveMaxX < 0) field.ball.x = 0;
     // if(moveMaxX > 0) field.ball.x = moveMaxX;
     // if(moveMaxX > maxX) field.ball.x = maxX;
