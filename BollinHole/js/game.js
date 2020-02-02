@@ -130,7 +130,8 @@ var Field = class Field{
 
   countAndTimeWin(){
     var curentCount = localStorage.getItem('count');
-    localStorage.setItem('count', curentCount + 1);
+    var curentCountInt = parseInt(curentCount);
+    localStorage.setItem('count', curentCountInt + 1);
     console.log(curentCount);
     location.reload();
   }
