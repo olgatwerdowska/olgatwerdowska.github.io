@@ -2,6 +2,7 @@
 var Field = class Field{
   holesList = new Array();
   ctx;
+  timeStart = Date.now();
   constructor(field){
     this.width = window.innerWidth;
     this.height = window.innerHeight;
@@ -17,6 +18,7 @@ var Field = class Field{
       this.ctx = this.canvas.getContext('2d');
       this.canvas.width = this.width;
       this.canvas.height = this.height;
+      localStorage.setItem('time', this.timeStart);
     }else {
       throw new Error('You have to provide Canvas ID');
     }
@@ -114,6 +116,15 @@ var Field = class Field{
           var curentCount = localStorage.getItem('count');
           var countHTML = document.getElementById('count');
           countHTML.innerText = "Count: " + curentCount;
+
+          var timeFinish = Date.now();
+          var  timeDifference = (timeFinish - field.timeStart) / 60;
+
+          console.log(timeDifference);
+
+          var timeHTML = document.getElementById('timeLose');
+          timeHTML.innerText = "Time: " + parseInt(timeDifference) + " s";
+
           window.removeEventListener('deviceorientation', field.BallMove, true);
           statement.style.display = "block";
 
@@ -128,6 +139,13 @@ var Field = class Field{
       && field.ball.x + field.ball.width > field.finish.x){
         const win = document.getElementById('win');
         const canvas = document.getElementById('field');
+
+        var timeFinish = Date.now();
+        var  timeDifference = timeFinish - field.timeStart;
+
+        var timeHTML = document.getElementById('timeLose');
+        timeHTML.innerText = "Time: " + timeDifference + "s";
+
         window.removeEventListener('deviceorientation', field.BallMove, true);
         win.style.display = "block";
         canvas.style.display = "none";
