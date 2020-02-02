@@ -99,11 +99,12 @@ var Field = class Field{
 
 
   checkBallinHole(){
-    field.holesList.forEach(function(props){
-      if(field.ball.y > props.y - 20
-        && field.ball.top < props.y + 20
-        && filed.ball.x > props.x - 20
-        && filed.ball.x < props.x + 20 ){
+    field.holesList.forEach(function(hole){
+      if(
+        hole.y + 45 > field.ball.y + 25
+        && hole.y - 45 < field.ball.y + 25
+        && hole.x + 45 > field.ball.x + 25
+        && hole.x - 45  < field.ball.x + 25){
           console.log("true");
           return true
       }
