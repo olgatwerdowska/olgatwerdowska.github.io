@@ -17,9 +17,9 @@
             </div>
             <div class="box">
                 <h1 class="gameovertitle">Game Over</h1>
-                <p class="count"><span>Count:</span>  13 </p>
+                <p class="count" id="count"><span>Count:</span>  13 </p>
                 <p class="time"><span>Time:</span>  12.00 </p>
-                <button onclick="location.reload()" class="again">TRY AGAIN</button>
+                <button onclick="countAndTimeLose()" class="again">TRY AGAIN</button>
             </div>
         </div>
         <div class="win" id="win">
@@ -29,7 +29,7 @@
             <div class="box">
                 <h1 class="gameovertitle">You win!</h1>
                 <p class="time"><span>Time:</span>  12.00 </p>
-                <button onclick="location.reload()" class="again">TRY AGAIN</button>
+                <button onclick="countAndTimeWin()" class="again">TRY AGAIN</button>
             </div>
         </div>
     </div>

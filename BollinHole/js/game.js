@@ -17,6 +17,7 @@ var Field = class Field{
       this.ctx = this.canvas.getContext('2d');
       this.canvas.width = this.width;
       this.canvas.height = this.height;
+      localStorage.setItem('count', 0);
     }else {
       throw new Error('You have to provide Canvas ID');
     }
@@ -127,6 +128,18 @@ var Field = class Field{
     }
   }
 
+  countAndTimeWin(){
+    var curentCount = localStorage.get('count');
+    localStorage.setItem('count', curentCount + 1);
+    location.reload();
+  }
+
+  countAndTimeLose(){
+    var curentCount = localStorage.get('count');
+    localStorage.setItem('count', 0);
+    document.getElementById('count').innerHTML = curentCount;
+    location.reload();
+  }
 }
 
 
