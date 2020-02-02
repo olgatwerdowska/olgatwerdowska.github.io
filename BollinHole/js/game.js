@@ -111,11 +111,19 @@ var Field = class Field{
           const statement = document.getElementById('statement');
           const canvas = document.getElementById('field');
           statement.style.display = "block";
-          canvas.style.display = "none";          
+          canvas.style.display = "none";   
+          return false       
       }
       console.log("true", hole.posotionY, field.ball.y);
       return true;
     })
+  }
+
+  checkBallinFinish(){
+    if( field.ball.y + field.ball.height > field.finish.y
+      && field.ball.x + field.ball.width > field.finish.x){
+        console.log("super");
+      }
   }
 
 }
@@ -180,6 +188,8 @@ class Finish{
     this.ctx = mCanvas;
     this.canvasHeight = window.innerHeight;
     this.canvasWidth = window.innerWidth;
+    this.y = this.canvasHeight - this.height;
+    this.x = this.canvasWidth - this.width;
   }
 
   initializeFinish(){
