@@ -6,7 +6,7 @@
   justify-content: center;
 }
 canvas{
-  border: 3px solid plum ;
+  border: 3px solid rgb(224, 43, 224) ;
 }
 body {
   padding: 0;
@@ -51,7 +51,7 @@ body {
   margin: 5px 0;
 }
 
-span{
+p{
   color: #35495e;
   font-family: 'Muli', sans-serif;
 }

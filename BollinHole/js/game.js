@@ -109,8 +109,13 @@ var Field = class Field{
         ){
           const statement = document.getElementById('statement');
           const canvas = document.getElementById('field');
+          canvas.style.display = "none";
+
+          var curentCount = localStorage.getItem('count');
+          var countHTML = document.getElementById('count');
+          countHTML.innerText = "Count: " + curentCount;
+
           statement.style.display = "block";
-          canvas.style.display = "none";   
           return false       
       }
       return true;
@@ -131,15 +136,11 @@ var Field = class Field{
     var curentCount = localStorage.getItem('count');
     var curentCountInt = parseInt(curentCount);
     localStorage.setItem('count', curentCountInt + 1);
-    console.log(curentCount);
     location.reload();
   }
 
   countAndTimeLose(){
-    var curentCount = localStorage.getItem('count');
     localStorage.setItem('count', 0);
-    document.getElementById('count').innerHTML = curentCount;
-    console.log(curentCount);
     location.reload();
   }
 }
