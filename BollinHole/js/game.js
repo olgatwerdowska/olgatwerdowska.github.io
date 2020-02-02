@@ -118,12 +118,10 @@ var Field = class Field{
           countHTML.innerText = "Count: " + curentCount;
 
           var timeFinish = Date.now();
-          var  timeDifference = (timeFinish - field.timeStart) / 60;
-
-          console.log(timeDifference);
+          var  timeDifference = (timeFinish - field.timeStart);
 
           var timeHTML = document.getElementById('timeLose');
-          timeHTML.innerText = "Time: " + parseInt(timeDifference) + " s";
+          timeHTML.innerText = "Time: " + (new Date(timeDifference).getSeconds())  + " s";
 
           window.removeEventListener('deviceorientation', field.BallMove, true);
           statement.style.display = "block";
@@ -143,8 +141,8 @@ var Field = class Field{
         var timeFinish = Date.now();
         var  timeDifference = timeFinish - field.timeStart;
 
-        var timeHTML = document.getElementById('timeLose');
-        timeHTML.innerText = "Time: " + timeDifference + "s";
+        var timeHTML = document.getElementById('timeWin');
+        timeHTML.innerText = "Time: " + (new Date(timeDifference).getSeconds())  + " s";
 
         window.removeEventListener('deviceorientation', field.BallMove, true);
         win.style.display = "block";
