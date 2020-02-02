@@ -129,13 +129,14 @@ var Field = class Field{
   }
 
   countAndTimeWin(){
-    var curentCount = localStorage.get('count');
+    var curentCount = localStorage.getItem('count');
     localStorage.setItem('count', curentCount + 1);
+    document.getElementById('count').innerHTML = curentCount;
     location.reload();
   }
 
   countAndTimeLose(){
-    var curentCount = localStorage.get('count');
+    var curentCount = localStorage.getItem('count');
     localStorage.setItem('count', 0);
     document.getElementById('count').innerHTML = curentCount;
     location.reload();
