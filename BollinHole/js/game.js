@@ -72,6 +72,7 @@ var Field = class Field{
     y += 90;
     var canvasHeight = window.innerHeight;
     var canvasWidth = window.innerWidth;
+
     var maxY = canvasHeight - field.ball.height;
     var maxX = canvasWidth - field.ball.width;
     
@@ -88,16 +89,29 @@ var Field = class Field{
     // if(moveMaxX < maxX) field.ball.x = moveMaxX;
     field.ball.x = moveMaxX; 
     field.ball.y = moveMaxY;
-
-    
- 
     field.ball.initializeBall();
     field.finish.initializeFinish();
     field.holesList.forEach(function(props){
-      const hole = props;
       props.initializeHole();
     })
+    field.checkBallinHole();
   }
+
+
+  checkBallinHole(){
+    field.holesList.forEach(function(props){
+      if(field.ball.y > props.y - 20
+        && field.ball.top < props.y + 20
+        && filed.ball.x > props.x - 20
+        && filed.ball.x < props.x + 20 ){
+          console.log("true");
+          return true
+      }
+      console.log("false");
+      return false;
+    })
+  }
+
 }
 
 
