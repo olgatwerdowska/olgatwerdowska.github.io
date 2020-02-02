@@ -80,14 +80,6 @@ var Field = class Field{
     var moveMaxY = (maxY * y / 180 - 20);
     var moveMaxX = (maxX * x / 180 - 20);
     
-    if(moveMaxY < 0) field.ball.y = 0 ;
-    // if(moveMaxY > 0) field.ball.y = moveMaxY;
-    // if(moveMaxY > maxY) field.ball.y = maxY;
-    // if(moveMaxY < maxY) field.ball.y = moveMaxY;
-    // if(moveMaxX < 0) field.ball.x = 0;
-    // if(moveMaxX > 0) field.ball.x = moveMaxX;
-    // if(moveMaxX > maxX) field.ball.x = maxX;
-    // if(moveMaxX < maxX) field.ball.x = moveMaxX;
     field.ball.x = moveMaxX; 
     field.ball.y = moveMaxY;
     field.ball.initializeBall();
@@ -128,10 +120,9 @@ var Field = class Field{
 
           window.removeEventListener('deviceorientation', field.BallMove, true);
           statement.style.display = "block";
-
-          return false  
+ 
       }
-      return true;
+
     })
   }
 
@@ -234,8 +225,16 @@ class Finish{
   }
 
   initializeFinish(){
-    this.ctx.fillStyle = "green";
-    this.ctx.fillRect((this.canvasWidth - this.width), (this.canvasHeight - this.height), this.width, this.height);
+
+    const finishImage = new Image();
+    finishImage.src = "./img/finish.png";
+    this.ctx.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
+    finishImage.addEventListener('load', () =>{
+    this.ctx.drawImage(finishImage,(this.canvasWidth - this.width), (this.canvasHeight - this.height), this.width, this.height);
+    });
+    
+    // this.ctx.fillStyle = "green";
+    // this.ctx.fillRect((this.canvasWidth - this.width), (this.canvasHeight - this.height), this.width, this.height);
   }
 }
 
