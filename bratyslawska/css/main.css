@@ -4,8 +4,7 @@
   src: url("../font/fontello.eot?17098897");
   src: url("../font/fontello.eot?17098897#iefix") format("embedded-opentype"), url("../font/fontello.woff2?17098897") format("woff2"), url("../font/fontello.woff?17098897") format("woff"), url("../font/fontello.ttf?17098897") format("truetype"), url("../font/fontello.svg?17098897#fontello") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -42,43 +41,35 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
 .icon-chrome:before {
-  content: '\e841';
-}
+  content: '\e841'; }
 
 /* '' */
 .icon-facebook:before {
-  content: '\f09a';
-}
+  content: '\f09a'; }
 
 /* '' */
 .icon-menu:before {
-  content: '\f0c9';
-}
+  content: '\f0c9'; }
 
 /* '' */
 .icon-instagram:before {
-  content: '\f16d';
-}
+  content: '\f16d'; }
 
 /* '' */
 body {
   margin: 0;
   font-size: 14px;
-  padding: 0;
-}
+  padding: 0; }
 
 img {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .container-fluid {
-  padding: 0;
-}
+  padding: 0; }
 
 .top-nav {
   position: fixed;
@@ -87,111 +78,89 @@ img {
   border-bottom: 1px solid white;
   background-color: #000000;
   display: block;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 22px;
-}
-
-.logo a {
-  margin: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #ffffff;
-}
+  font-size: 22px; }
+  .logo a {
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff; }
 
 .top-nav-menu {
   list-style: none;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-}
-
-.top-nav-menu li {
-  margin-left: 50px;
-}
-
-.top-nav-menu li a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Dancing Script', cursive;
-  font-size: 22px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.top-nav-menu li a:hover {
-  opacity: 0.6;
-}
-
-.top-nav-menu li .leanguage {
-  background: none;
-  border: solid 1px white;
-  color: white;
-  font-size: 12px;
-  padding: 6px;
-  cursor: pointer;
-}
-
-.top-nav-menu li .leanguage:hover {
-  opacity: 0.6;
-}
+  display: flex; }
+  .top-nav-menu li {
+    margin-left: 50px; }
+    .top-nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-family: 'Dancing Script', cursive;
+      font-size: 22px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+      .top-nav-menu li a:hover {
+        opacity: 0.6; }
+    .top-nav-menu li .leanguage {
+      background: none;
+      border: solid 1px white;
+      color: white;
+      font-size: 12px;
+      padding: 6px;
+      cursor: pointer; }
+      .top-nav-menu li .leanguage:hover {
+        opacity: 0.6; }
 
 .burger-menu {
-  display: none;
-}
+  display: none; }
 
 .block-cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 100vh;
   width: 100%;
-  background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 35%;
-}
+  background-position: 50% 35%; }
 
 .title-box {
   position: absolute;
   display: block;
   margin-top: 40px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
+  background: rgba(0, 0, 0, 0.5); }
 
 .title {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   color: white;
   text-transform: uppercase;
-  margin-top: 30px;
-}
-
-.title-text {
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  color: white;
-  font-size: 30px;
-  margin-top: 0;
-}
+  margin-top: 30px; }
+  .title-text {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 30px;
+    margin-top: 0; }
 
 .title-block {
   text-align: center;
   font-family: 'Dancing Script', cursive;
-  margin: 0;
-}
+  margin: 0; }
 
 .text-block {
   margin: 0;
@@ -201,95 +170,79 @@ img {
   padding-left: 100px;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .block-cover-2 {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 500px;
   width: 100%;
-  background-image: url(../img/olenka-kotyk-iRguZkRTQyA-unsplash.jpg);
+  background-image: url(../img/olenka-kotyk-iRguZkRTQyA-unsplash.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 40%;
-}
+  background-position: 50% 40%; }
 
 .block-cover-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.block-cover-2 .title {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px 0;
-  font-size: 35px;
-  text-transform: capitalize;
-}
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .block-cover-2 .title {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    font-size: 35px;
+    text-transform: capitalize; }
 
 .menu {
   margin-top: 70px;
   margin-bottom: 50px;
   padding: 0;
   -webkit-box-shadow: 0 0 40px rgba(38, 38, 38, 0.2);
-          box-shadow: 0 0 40px rgba(38, 38, 38, 0.2);
-}
-
-.menu-item {
-  background-color: white;
-}
-
-.menu-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 70px;
-  text-transform: uppercase;
-}
+  box-shadow: 0 0 40px rgba(38, 38, 38, 0.2); }
+  .menu-item {
+    background-color: white; }
+  .menu-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase; }
 
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-}
-
-.content-title {
-  font-family: 'Dancing Script', cursive;
-}
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%; }
+  .content-title {
+    font-family: 'Dancing Script', cursive; }
 
 .content-img {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .img {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 .btn-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .btn-menu {
   background: none;
@@ -300,36 +253,29 @@ img {
   font-family: 'Dancing Script', cursive;
   font-size: 20px;
   border: solid 1.5px rgba(0, 0, 0, 0.5);
-  margin-bottom: 60px;
-}
-
-.btn-menu:hover {
-  border: solid 2px rgba(0, 0, 0, 0.9);
-}
-
-.btn-menu a {
-  text-decoration: none;
-  color: #000;
-  font-size: 23px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+  margin-bottom: 60px; }
+  .btn-menu:hover {
+    border: solid 2px rgba(0, 0, 0, 0.9); }
+  .btn-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 .lunch {
   margin-bottom: 60px;
   -webkit-box-shadow: 0 0 40px rgba(38, 38, 38, 0.2);
-          box-shadow: 0 0 40px rgba(38, 38, 38, 0.2);
-}
+  box-shadow: 0 0 40px rgba(38, 38, 38, 0.2); }
 
 .lunch-wrap {
   display: -webkit-box;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-}
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
 
 .lunch-title {
   font-family: 'Dancing Script', cursive;
@@ -337,8 +283,7 @@ img {
   font-size: 60px;
   display: inline-block;
   width: 100%;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 .lunch-content {
   display: inline-block;
@@ -346,8 +291,7 @@ img {
   font-family: 'Dosis', sans-serif;
   font-size: 25px;
   text-align: center;
-  padding: 0 20px;
-}
+  padding: 0 20px; }
 
 .footer {
   height: 500px;
@@ -355,200 +299,151 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: border-box;
-  background-position: 50% 60%;
-}
-
-.footer-wrap {
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  background-position: 50% 60%; }
+  .footer-wrap {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .footer-content {
   color: white;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 25px;
-}
+  font-size: 25px; }
 
 .footer-item-title {
   color: white;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .footer-title {
   color: white;
   text-align: center;
   font-family: 'Dancing Script', cursive;
-  font-size: 35px;
-}
+  font-size: 35px; }
 
 .footer-social-links {
   text-align: center;
   width: 100%;
-  margin-top: 30px;
-}
-
-.footer-social-links ul {
-  padding: 0;
-}
-
-.footer-social-links ul li {
-  display: inline-block;
-  padding: 15px;
-}
-
-.footer-social-links ul li a {
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  background-color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  border-radius: 50%;
-  line-height: 42px;
-  margin-left: 5px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-decoration: none;
-}
-
-.footer-social-links ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
-}
+  margin-top: 30px; }
+  .footer-social-links ul {
+    padding: 0; }
+    .footer-social-links ul li {
+      display: inline-block;
+      padding: 15px; }
+      .footer-social-links ul li a {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        border-radius: 50%;
+        line-height: 42px;
+        margin-left: 5px;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        text-decoration: none; }
+        .footer-social-links ul li a:hover {
+          background-color: rgba(255, 255, 255, 0.9);
+          color: black; }
 
 @media all and (max-width: 767px) {
   .top-nav {
-    padding: 15px 40px;
-  }
+    padding: 15px 40px; }
   .logo {
-    font-size: 30px;
-  }
+    font-size: 30px; }
   .top-nav-menu {
-    display: none;
-  }
+    display: none; }
   .top-nav-menu__active {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-  }
+    display: flex; }
   .top-nav-menu__active.top-nav-menu li {
-    margin: 0 auto;
-  }
-  .top-nav-menu__active.top-nav-menu li a {
-    font-size: 20px;
-  }
+    margin: 0 auto; }
+    .top-nav-menu__active.top-nav-menu li a {
+      font-size: 20px; }
   .burger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-  }
+    display: flex; }
   .burger-img {
     width: 24px;
-    height: 24px;
-  }
+    height: 24px; }
   .title-box {
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
   .title-text {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .title-block {
-    font-size: 25px;
-  }
+    font-size: 25px; }
   .text-block {
     padding-top: 50px;
     padding-right: 10px;
     padding-bottom: 30px;
     padding-left: 10px;
-    font-size: 15px;
-  }
+    font-size: 15px; }
   .block-cover-2 {
-    height: 300px;
-  }
+    height: 300px; }
   .menu {
     margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 30px;
-  }
+    margin-bottom: 30px; }
   .menu-title {
     font-size: 35px;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
   .content-title {
     font-size: 10px;
-    text-align: center;
-  }
+    text-align: center; }
   .btn-menu {
-    margin-bottom: 30px;
-  }
+    margin-bottom: 30px; }
   .lunch-wrap {
-    padding: 10px 0;
-  }
+    padding: 10px 0; }
   .lunch-content {
-    font-size: 10px;
-  }
+    font-size: 10px; }
   .lunch-title {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .footer-wrap {
-    display: block;
-  }
+    display: block; }
   .footer-title {
-    font-size: 30px;
-  }
+    font-size: 30px; }
   .footer-item-title {
     margin: 0;
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .footer-content {
     margin: 10px;
     padding: 10px;
     border: 1px solid;
-    font-size: 15px;
-  }
+    font-size: 15px; }
   .footer-social-links ul {
-    margin: 0;
-  }
-}
+    margin: 0; } }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .top-nav-menu li {
-    margin-left: 40px;
-  }
+    margin-left: 40px; }
   .text-block {
     padding-right: 50px;
     padding-left: 50px;
-    font-size: 16px;
-  }
+    font-size: 16px; }
   .lunch-content {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .lunch-content {
-    font-size: 18px;
-  }
+    font-size: 18px; }
   .footer-content {
-    font-size: 18px;
-  }
+    font-size: 18px; }
   .footer {
     height: -webkit-max-content;
     height: -moz-max-content;
-    height: max-content;
-  }
+    height: max-content; }
   .footer-social-links {
-    margin-top: 0px;
-  }
-}
-/*# sourceMappingURL=main.css.map */
+    margin-top: 0px; } }
