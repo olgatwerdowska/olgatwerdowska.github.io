@@ -95,7 +95,8 @@ button::-moz-focus-inner {
   width: 100%;
   position: fixed;
   background-color: white;
-  z-index: 1; }
+  z-index: 1;
+  border-bottom: 1px solid #b6ab98; }
   .top-nav_menu {
     padding: 0;
     margin: 0;
@@ -441,7 +442,8 @@ button::-moz-focus-inner {
     .logo img {
       display: none; }
   .top-section {
-    min-height: 36em; }
+    min-height: 36em;
+    background-position: 60%; }
     .top-section .content-box h1 {
       font-size: 1.2em;
       text-align: center; }
