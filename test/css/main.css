@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  font-weight: normal;
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl_0.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl_bold';
+  font-weight: bold;
+  src: url(../fonts/Museo-Sans-Cyr/MuseoSansCyrl_3.otf) format("opentype"); }
+
+body {
+  padding: 0;
+  margin: 110px 0;
+  font-family: Museo Sans Cyrl; }
+
+.review-items {
+  height: calc(100% + 20px);
+  -webkit-box-shadow: 0px 4px 32px rgba(157, 169, 194, 0.24);
+  box-shadow: 0px 4px 32px rgba(157, 169, 194, 0.24); }
+  .review-items::after {
+    content: ' ';
+    width: 40px;
+    height: 100%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: 0px 0px 30px 30px white;
+    box-shadow: 0px 0px 30px 30px white; }
+
+.title {
+  font-family: 'Museo Sans Cyrl_bold';
+  font-size: bold;
+  font-size: 45px;
+  color: #171718;
+  margin-bottom: 40px; }
+
+.more-information {
+  display: none; }
+
+.review-item {
+  -webkit-box-shadow: 0px 4px 32px rgba(157, 169, 194, 0.24);
+  box-shadow: 0px 4px 32px rgba(157, 169, 194, 0.24);
+  border-radius: 5px;
+  padding: 30px 121px 30px 35px; }
+  .review-item_left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-right: 3px solid #BD00FF; }
+  .review-item-img {
+    height: 30px;
+    width: 40px;
+    display: block; }
+    .review-item-img_mobile {
+      display: none; }
+  .review-item-content {
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px; }
+
+.review-item-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  width: 87px; }

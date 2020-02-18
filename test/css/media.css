@@ -1,0 +1,189 @@
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  .slick-slide {
+    width: 220px; }
+  .title {
+    font-size: 28px; }
+  .review-item {
+    padding: 20px; }
+    .review-item-title {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      width: auto;
+      font-size: 16px;
+      margin-bottom: 0; }
+    .review-item-content {
+      font-size: 14px;
+      height: 82px;
+      overflow: hidden; }
+  .review-item_left-side {
+    border-right: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 15px; }
+  .review-item-img {
+    display: none; }
+    .review-item-img_mobile {
+      display: block;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-right: 15px; }
+  .more-information {
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block; }
+    .more-information a {
+      font-family: Museo Sans Cyrl;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #171718;
+      opacity: 0.3;
+      outline: none;
+      text-decoration: none; }
+  .open {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content; } }
+
+@media screen and (min-width: 480px) and (orientation: portrait) {
+  .slick-slide {
+    width: 300px; }
+  .review-item {
+    padding: 20px 25px; } }
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .slick-slide {
+    width: 600px; }
+  .more-information {
+    display: none; }
+  .review-item-content {
+    height: 100%; }
+  .review-item-img_mobile {
+    display: none; }
+  .review-item-title {
+    width: 87px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .review-item-img {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .review-item_left-side {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 3px solid #BD00FF; } }
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .title {
+    font-size: 28px; }
+  .review-item {
+    padding: 20px 25px; }
+    .review-item-title {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      width: auto;
+      font-size: 16px;
+      margin-bottom: 0; }
+    .review-item-content {
+      font-size: 14px;
+      height: 82px;
+      overflow: hidden; }
+  .review-item_left-side {
+    border-right: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 15px; }
+  .review-item-img {
+    display: none; }
+    .review-item-img_mobile {
+      display: block;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-right: 15px; }
+  .more-information {
+    padding-left: 15px;
+    padding-top: 15px;
+    display: block; }
+    .more-information a {
+      font-family: Museo Sans Cyrl;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #171718;
+      opacity: 0.3;
+      outline: none;
+      text-decoration: none; }
+  .open {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content; }
+  .slick-slide {
+    width: 400px; } }
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .slick-slide {
+    width: 600px; }
+  .more-information {
+    display: none; }
+  .review-item-content {
+    height: 100%; }
+  .review-item-img_mobile {
+    display: none; }
+  .review-item-title {
+    width: 87px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+  .review-item-img {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .review-item_left-side {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 3px solid #BD00FF; }
+  .slick-arrow {
+    margin-top: 15px !important; } }
+
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  .title {
+    font-size: 45px; }
+  .slick-slide {
+    width: 750px; }
+  .review-item_left-side {
+    margin-bottom: 0; }
+  .review-item_left-side {
+    font-size: 16px; }
+  .review-item {
+    padding: 30px 121px 30px 35px; }
+  .slick-arrow {
+    margin-top: 25px !important; } }
