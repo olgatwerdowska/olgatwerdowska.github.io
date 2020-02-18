@@ -14,12 +14,12 @@ $(document).ready(function(){
        ]
    });
 
-   var link = $('#link'),
-   box = $("#box");
+   var link = $('.link'),
+   box = $(".review-item-content");
    link.on('click', function(event){
        event.preventDefault();
        box.toggleClass('open');
-       if(link.text() == "Подробнее"){
+       if(event.target.text == "Подробнее"){
            link.text("Cкрыть") 
        }
        else{
